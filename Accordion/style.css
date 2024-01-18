@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.acc-container {
+    margin-top: 1rem;
+    width: 80%;
+}
+
+.accord {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+}
+.accord i{
+    position: absolute;
+    right: 1rem;
+
+}
+
+.head {
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+.head::selection{
+    content: none;
+}
+
+.head:hover {
+    background-color: #2980b9;
+}
+
+.para {
+    padding: 10px;
+    margin: 0;
+    display: none;
+    animation: fadeInOut 0.5s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

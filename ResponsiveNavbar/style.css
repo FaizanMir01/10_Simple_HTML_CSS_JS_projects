@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(149, 87, 206);
+    align-items: center;
+    position: relative;
+
+}
+.logo p{
+    font-size:2.5rem;
+    font-weight: 600;
+    color: white;
+}
+.ham-menu i{
+    font-size: 2rem;
+    color: white;
+}
+.ham-menu{
+    display: none;
+}
+.nav-links{
+    display: flex;
+    gap: 1.5rem;
+}
+.nav-links .btn{
+    display: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.nav-links a:hover{
+    color: rgb(0, 0, 0);
+}
+.btn button{
+    padding: .5rem 2rem;
+    border-radius: 100px;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    background: linear-gradient(purple,60%, blueviolet);
+    color: white;
+
+}
+@media screen and (max-width:1024px) {
+    .ham-menu{
+        display: block;
+    }
+    .btn{
+        display: none;
+    }
+    .nav-links .btn{
+        display: block;
+    }
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: -100%;
+        background-color: blue;
+        width: 100%;
+        align-items: center;
+        gap: 1.5rem;
+        z-index: 99;
+    }
+    .nav-links a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    
+}

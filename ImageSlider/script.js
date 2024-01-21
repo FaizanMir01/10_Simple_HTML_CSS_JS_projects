@@ -20,6 +20,3 @@ function updateSlider() {
 }
 
 // Automatic slide change every 3 seconds
-setInterval(() => {
-    changeSlide(1);
-}, 3000);
